@@ -1,6 +1,6 @@
 FROM mongo:latest
 
-MAINTAINER EasyMetrics
+MAINTAINER hemant231
 
 # Setup build environment
 # ...
