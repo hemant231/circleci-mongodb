@@ -4,6 +4,9 @@ machine:
 
 dependencies:
   post:
+    - setup_remote_docker
+    - apk add --no-cache py-pip=9.0.0-r1
+    - pip install docker-compose==1.12.0
     - docker build -t 463442625423.dkr.ecr.us-east-2.amazonaws.com/yello-team:$CIRCLE_SHA1 .
     - docker build -t 463442625423.dkr.ecr.us-east-2.amazonaws.com/yello-team:latest .
 
